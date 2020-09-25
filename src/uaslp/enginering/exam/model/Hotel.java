@@ -7,14 +7,17 @@ public class Hotel {
     private String Name;
     private Room room;
 
-    public Hotel(String[] name) {
-        this.Name = name;
+    public void addRoom(Room room){
+        this.room=room;
     }
 
-    public void addRoom(){}
+    public String getName() {
+        return Name;
+    }
 
-    public Hotel() {
+    public Hotel(String comfort_poo_inn) {
         reservations = new ArrayList<>();
+        Name = comfort_poo_inn;
     }
 
     public void reserveRoom(int roomNumber, Guest guest, String arrivalDate, int nights) {

@@ -1,13 +1,15 @@
 package uaslp.enginering.exam.model;
 
-public enum RoomStatus {
+public class RoomStatus {
     private boolean Limpio;
 
-    public CLEAN{
+    public boolean CLEAN(){
         Limpio = true;
+        return true;
     }
 
-    public DIRTY{
+    public boolean DIRTY() {
         Limpio = false;
+        return false;
     }
 }

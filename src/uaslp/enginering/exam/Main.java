@@ -40,16 +40,16 @@ public class Main {
     private static Hotel prepareHotel() {
         Hotel hotel = new Hotel("Comfort POO Inn");
 
-        hotel.addRoom(new Room(100, "1-BED-KING", RoomStatus.CLEAN)); // Room receives room number and room description
-        hotel.addRoom(new Room(101, "2-BED-QUEEN", RoomStatus.CLEAN));
-        hotel.addRoom(new Room(102, "1-BED-KING", RoomStatus.CLEAN));
-        hotel.addRoom(new Room(103, "1-BED-KING", RoomStatus.DIRTY));
-        hotel.addRoom(new Room(200, "2-BED-QUEEN", RoomStatus.DIRTY));
-        hotel.addRoom(new Room(201, "2-BED-QUEEN", RoomStatus.CLEAN));
-        hotel.addRoom(new Room(202, "2-BED-QUEEN", RoomStatus.DIRTY));
-        hotel.addRoom(new Room(203, "2-BED-QUEEN", RoomStatus.CLEAN));
-        hotel.addRoom(new Room(204, "2-BED-QUEEN", RoomStatus.CLEAN));
-        hotel.addRoom(new Room(205, "2-BED-QUEEN", RoomStatus.DIRTY));
+        hotel.addRoom(new Room(100, "1-BED-KING", RoomStatus.CLEAN())); // Room receives room number and room description
+        hotel.addRoom(new Room(101, "2-BED-QUEEN", RoomStatus.CLEAN()));
+        hotel.addRoom(new Room(102, "1-BED-KING", RoomStatus.CLEAN()));
+        hotel.addRoom(new Room(103, "1-BED-KING", RoomStatus.DIRTY()));
+        hotel.addRoom(new Room(200, "2-BED-QUEEN", RoomStatus.DIRTY()));
+        hotel.addRoom(new Room(201, "2-BED-QUEEN", RoomStatus.CLEAN()));
+        hotel.addRoom(new Room(202, "2-BED-QUEEN", RoomStatus.DIRTY()));
+        hotel.addRoom(new Room(203, "2-BED-QUEEN", RoomStatus.CLEAN()));
+        hotel.addRoom(new Room(204, "2-BED-QUEEN", RoomStatus.CLEAN()));
+        hotel.addRoom(new Room(205, "2-BED-QUEEN", RoomStatus.DIRTY()));
 
         return hotel;
     }
