@@ -4,7 +4,14 @@ import java.util.ArrayList;
 
 public class Hotel {
     private ArrayList<Reservation> reservations;
+    private String Name;
+    private Room room;
 
+    public Hotel(String[] name) {
+        this.Name = name;
+    }
+
+    public void addRoom(){}
 
     public Hotel() {
         reservations = new ArrayList<>();
