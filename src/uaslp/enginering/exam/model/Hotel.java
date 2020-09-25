@@ -5,10 +5,11 @@ import java.util.ArrayList;
 public class Hotel {
     private ArrayList<Reservation> reservations;
     private String Name;
-    private Room room;
+    private ArrayList<Room > rooms;
+    private int sizeRooms;
 
-    public void addRoom(Room room){
-        this.room=room;
+    public void setReservations(ArrayList<Reservation> reservations) {
+        this.reservations = reservations;
     }
 
     public String getName() {
@@ -17,7 +18,13 @@ public class Hotel {
 
     public Hotel(String comfort_poo_inn) {
         reservations = new ArrayList<>();
+        rooms = new ArrayList<>();
         Name = comfort_poo_inn;
+    }
+
+    public void addRoom(Room room){
+        rooms.add(room);
+        sizeRooms++;
     }
 
     public void reserveRoom(int roomNumber, Guest guest, String arrivalDate, int nights) {
@@ -33,5 +40,9 @@ public class Hotel {
 
     public ArrayList<Reservation> getReservations() {
         return reservations;
+    }
+
+    public ArrayList<Room> getRooms(){
+        return  rooms;
     }
 }
